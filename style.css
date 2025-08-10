@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #34495e;
+    --secondary-color: #ecf0f1;
+    --accent-color: #e74c3c;
+    --bg-color: #2c3e50;
+    --font-family: 'Georgia', serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#story-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    min-height: 100px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.choice-button {
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choice-button:hover {
+    transform: scale(1.02);
+}
+
+/* New button styles based on choice */
+.choice-button.red-door {
+    background-color: #c0392b;
+    color: white;
+}
+
+.choice-button.blue-door {
+    background-color: #2980b9;
+    color: white;
+}
+
+.choice-button.gold-key {
+    background-color: #f1c40f;
+    color: var(--primary-color);
+}
+
+.choice-button.silver-key {
+    background-color: #bdc3c7;
+    color: var(--primary-color);
+}
+
+.choice-button.lantern {
+    background-color: #f1c40f;
+    color: var(--primary-color);
+}
+
+.choice-button.run {
+    background-color: #8e44ad;
+    color: white;
+}
+.choice-button.play-again {
+    background-color: #27ae60;
+    color: white;
+}
+
+.choice-button.trust-fox {
+    background-color: #e67e22;
+    color: white;
+}
+.choice-button.no-trust {
+    background-color: #34495e;
+    color: white;
+}
