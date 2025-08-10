@@ -2,7 +2,7 @@
 A web-based, choice-driven story game where every decision shapes the journey and unlocks different endings.
 
 🎮 Live Demo
-▶ Play the Game
+https://tokahosney.github.io/interactive-story-game/
 
 ##  Features
 Dynamic branching paths – every choice matters and leads to unique outcomes.
